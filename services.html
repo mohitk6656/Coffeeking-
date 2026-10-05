@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+</head>
+
+<body class="bg-[#F2EAD3]">
+
+    <header class="w-full bg-[#3F2305] shadow-md">
+        <nav
+            class="mx-auto flex min-h-16 w-full max-w-7xl items-center justify-between px-4 sm:px-6 lg:min-h-20 lg:px-8">
+            <!-- Logo -->
+            <a href="index.html" class="shrink-0 transition-opacity duration-300 hover:opacity-90"
+                aria-label="CoffeeKing Home">
+                <img src="./image/mylogo.png" alt="CoffeeKing" class="h-auto w-20 sm:w-24 md:w-28 lg:w-32">
+            </a>
+
+            <!-- Desktop Navigation -->
+            <div class="hidden items-center gap-5 md:flex lg:gap-8">
+                <a href="index.html"
+                    class="relative py-2 text-sm font-medium text-[#F2EAD3] transition-colors duration-300 hover:text-[#D4A373] lg:text-base">
+                    Home
+                </a>
+
+                <a href="services.html"
+                    class="relative py-2 text-sm font-medium text-[#F2EAD3] transition-colors duration-300 hover:text-[#D4A373] lg:text-base">
+                    Services
+                </a>
+
+                <a href="gallery.html"
+                    class="relative py-2 text-sm font-medium text-[#F2EAD3] transition-colors duration-300 hover:text-[#D4A373] lg:text-base">
+                    Gallery
+                </a>
+
+                <a href="contact.html"
+                    class="relative py-2 text-sm font-medium text-[#F2EAD3] transition-colors duration-300 hover:text-[#D4A373] lg:text-base">
+                    Contact
+                </a>
+            </div>
+
+            <!-- Mobile Menu -->
+            <a href="menu.html" aria-label="Open Menu"
+                class="flex min-h-10 min-w-10 items-center justify-center rounded-md text-xl text-[#F2EAD3] transition-all duration-300 hover:bg-[#5A3409] hover:text-[#D4A373] focus:outline-none focus:ring-2 focus:ring-[#D4A373] focus:ring-offset-2 focus:ring-offset-[#3F2305] md:hidden">
+                <i class="fa-solid fa-bars" aria-hidden="true"></i>
+            </a>
+        </nav>
+    </header>
+
+    <main
+        class=" flex min-h-screen w-full flex-col items-center justify-center gap-10 px-6 py-12 sm:px-8 md:gap-14 lg:flex-row lg:gap-16 lg:px-12 lg:py-16">
+
+        <div class="flex w-full max-w-xl flex-col items-center text-center lg:w-1/2 lg:items-start lg:text-left">
+            <!-- Subtitle Accent -->
+            <div class="mb-5 flex flex-col items-center lg:items-start">
+                <span class="mb-3 h-[2px] w-8 bg-accent"></span>
+
+                <span class="font-sans text-xs font-medium uppercase tracking-[0.3em] text-accent sm:text-sm">
+                    Dolce Gusto
+                </span>
+            </div>
+
+            <!-- Main Title -->
+            <h1
+                class="mb-6 font-sans text-4xl font-normal uppercase leading-[1.05] tracking-wider text-gray-900 sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
+                Menu Tabs
+                <br />
+
+            </h1>
+
+            <!-- Description -->
+            <p class="max-w-md text-sm leading-7 text-gray-600 sm:text-base sm:leading-8">
+                Discover the perfect blend of rich aromas, handcrafted coffee, and a
+                warm atmosphere. Come visit us and experience the Dolce Gusto difference.
+            </p>
+
+            <!-- Button -->
+            <a href="#"
+                class="mt-8 inline-flex items-center justify-center rounded-full bg-gray-900 px-7 py-3 font-sans text-sm font-medium uppercase tracking-wider text-white transition duration-300 hover:bg-accent focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2">
+                Check Our Menu
+            </a>
+        </div>
+
+        <!-- images -->
+
+        <div class="flex w-full justify-center lg:w-1/2 lg:justify-end">
+            <div
+                class="relative w-full max-w-[420px] sm:max-w-[500px] md:max-w-[560px] lg:max-w-[620px] xl:max-w-[700px]">
+                <img src="./image/menu.png" alt="A cup of coffee at Dolce Gusto"
+                    class="aspect-square w-full rounded-full object-cover shadow-xl" />
+            </div>
+        </div>
+    </main>
+
+    <!-- mid section -->
+
+
+    <section class="w-full bg-[#F2EAD3] px-4 py-16 sm:px-6 sm:py-20 md:py-24 lg:py-28">
+        <div class="mx-auto flex w-full max-w-5xl flex-col items-center text-center">
+
+            <!-- Navigation -->
+            <nav class="mb-12 flex w-full flex-wrap items-center justify-center gap-2 sm:mb-14 sm:gap-3 md:gap-5 lg:gap-7"
+                aria-label="Menu categories">
+                <!-- Active -->
+                <a href="#"
+                    class="min-w-[72px] bg-[#D9823B] px-5 py-3 text-xs font-medium tracking-[0.15em] text-white transition-colors duration-300 hover:bg-[#c87332] sm:min-w-[88px] sm:px-7 sm:py-3.5 sm:text-sm">
+                    ALL
+                </a>
+
+                <a href="#"
+                    class="px-4 py-3 text-xs tracking-[0.12em] text-[#333333] transition-colors duration-300 hover:text-[#D9823B] sm:px-6 sm:py-3.5 sm:text-sm">
+                    DRINKS
+                </a>
+
+                <a href="#"
+                    class="px-4 py-3 text-xs tracking-[0.12em] text-[#333333] transition-colors duration-300 hover:text-[#D9823B] sm:px-6 sm:py-3.5 sm:text-sm">
+                    DESSERTS
+                </a>
+
+                <a href="#"
+                    class="px-4 py-3 text-xs tracking-[0.12em] text-[#333333] transition-colors duration-300 hover:text-[#D9823B] sm:px-6 sm:py-3.5 sm:text-sm">
+                    DISHES
+                </a>
+            </nav>
+
+            <!-- Decorative Line -->
+            <div class="mb-5 h-1 w-7 rounded-full bg-[#D9823B] sm:mb-6 sm:w-8"></div>
+
+            <!-- Small Heading -->
+            <p
+                class="mb-3 text-[10px] font-bold uppercase tracking-[0.2em] text-[#4A4A4A] sm:mb-4 sm:text-xs sm:tracking-[0.15em]">
+                Our Menu
+            </p>
+
+            <!-- Main Heading -->
+            <h1
+                class="mb-6 text-4xl font-light leading-none tracking-tight text-[#333333] sm:mb-7 sm:text-5xl md:text-6xl">
+                All
+            </h1>
+
+            <!-- Description -->
+            <p
+                class="max-w-[90%] text-center text-xs leading-6 text-[#666666] sm:max-w-xl sm:text-sm sm:leading-7 md:text-base">
+                Porro eveniet, autem ipsam corrupti consectetur cum.
+                <br class="hidden sm:block" />
+                Repudiandae dignissimos fugiat sit nam.
+            </p>
+
+        </div>
+    </section>
+
+    <!-- Menu cards -->
+
+    <section class="w-full px-4 py-8 sm:px-6 md:py-12 lg:px-12 xl:px-16">
+
+        <!-- Grid -->
+        <div class="grid grid-cols-1 gap-5 sm:gap-6 md:grid-cols-3 lg:gap-7">
+
+            <!-- CARD 1 -->
+            <article class="group w-full overflow-hidden bg-[#F2EAD3] transition duration-300 hover:-translate-y-1">
+                <div class="flex items-center gap-4 p-3 sm:gap-5 sm:p-4">
+
+                    <!-- Image -->
+                    <div class="h-24 w-24 shrink-0 overflow-hidden sm:h-28 sm:w-28 md:h-32 md:w-32 lg:h-36 lg:w-36">
+                        <img src="./image/item1.webp" alt="Dark Coffee"
+                            class="h-full w-full object-cover transition duration-500 group-hover:scale-105" />
+                    </div>
+
+                    <!-- Content -->
+                    <div class="flex min-w-0 flex-1 flex-col self-stretch py-1">
+
+                        <!-- Title + Price -->
+                        <div class="flex items-start justify-between gap-3">
+
+                            <h2 class="font-serif text-xl leading-tight text-[#10191B] sm:text-2xl lg:text-[27px]">
+                                Dark Coffee
+                            </h2>
+
+                            <span class="shrink-0 pt-1 text-sm font-medium text-[#858585] sm:text-base">
+                                $<span class="ml-0.5 text-[#10191B]">4.99</span>
+                            </span>
+
+                        </div>
+
+                        <!-- Description -->
+                        <p class="mt-2 line-clamp-2 text-xs leading-5 text-[#777] sm:mt-3 sm:text-sm sm:leading-6">
+                            Consectetur adipisicing elit. Soluta, impedit saepe.
+                        </p>
+
+                        <!-- Button -->
+                        <div class="mt-auto flex justify-end pt-3">
+
+                            <button type="button" aria-label="Add Dark Coffee to cart"
+                                class="flex h-9 w-9 items-center justify-center rounded-full bg-[#E98C3B] text-white transition duration-200 hover:bg-[#D9792A] active:scale-90 sm:h-10 sm:w-10">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="1.7" class="h-4 w-4 sm:h-5 sm:w-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M6.75 8.25h10.5l.75 11.25H6l.75-11.25Z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M9 8.25V6a3 3 0 0 1 6 0v2.25" />
+                                </svg>
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+
+            <!-- CARD 2 -->
+            <article class="group w-full overflow-hidden bg-[#F2EAD3] transition duration-300 hover:-translate-y-1">
+                <div class="flex items-center gap-4 p-3 sm:gap-5 sm:p-4">
+
+                    <!-- Image -->
+                    <div class="h-24 w-24 shrink-0 overflow-hidden sm:h-28 sm:w-28 md:h-32 md:w-32 lg:h-36 lg:w-36">
+                        <img src="./image/item2.webp" alt="Espresso Martini"
+                            class="h-full w-full object-cover transition duration-500 group-hover:scale-105" />
+                    </div>
+
+                    <!-- Content -->
+                    <div class="flex min-w-0 flex-1 flex-col self-stretch py-1">
+
+                        <!-- Title + Price -->
+                        <div class="flex items-start justify-between gap-3">
+
+                            <h2 class="font-serif text-xl leading-tight text-[#10191B] sm:text-2xl lg:text-[27px]">
+                                Espresso Martini
+                            </h2>
+
+                            <span class="shrink-0 pt-1 text-sm font-medium text-[#858585] sm:text-base">
+                                $<span class="ml-0.5 text-[#10191B]">3.50</span>
+                            </span>
+
+                        </div>
+
+                        <!-- Description -->
+                        <p class="mt-2 line-clamp-2 text-xs leading-5 text-[#777] sm:mt-3 sm:text-sm sm:leading-6">
+                            Consectetur adipisicing elit. Soluta, impedit saepe.
+                        </p>
+
+                        <!-- Button -->
+                        <div class="mt-auto flex justify-end pt-3">
+
+                            <button type="button" aria-label="Add Espresso Martini to cart"
+                                class="flex h-9 w-9 items-center justify-center rounded-full bg-[#E98C3B] text-white transition duration-200 hover:bg-[#D9792A] active:scale-90 sm:h-10 sm:w-10">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="1.7" class="h-4 w-4 sm:h-5 sm:w-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M6.75 8.25h10.5l.75 11.25H6l.75-11.25Z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M9 8.25V6a3 3 0 0 1 6 0v2.25" />
+                                </svg>
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+
+            <!-- CARD 3 -->
+            <article class="group w-full overflow-hidden bg-[#F2EAD3] transition duration-300 hover:-translate-y-1">
+                <div class="flex items-center gap-4 p-3 sm:gap-5 sm:p-4">
+
+                    <div class="h-24 w-24 shrink-0 overflow-hidden sm:h-28 sm:w-28 md:h-32 md:w-32 lg:h-36 lg:w-36">
+                        <img src="./image/item3.webp" alt="Cappuccino"
+                            class="h-full w-full object-cover transition duration-500 group-hover:scale-105" />
+                    </div>
+
+                    <div class="flex min-w-0 flex-1 flex-col self-stretch py-1">
+
+                        <div class="flex items-start justify-between gap-3">
+                            <h2 class="font-serif text-xl leading-tight text-[#10191B] sm:text-2xl lg:text-[27px]">
+                                Fruity Cake
+                            </h2>
+
+                            <span class="shrink-0 pt-1 text-sm font-medium text-[#858585] sm:text-base">
+                                $<span class="ml-0.5 text-[#10191B]">8.00</span>
+                            </span>
+                        </div>
+
+                        <p class="mt-2 line-clamp-2 text-xs leading-5 text-[#777] sm:mt-3 sm:text-sm sm:leading-6">
+                            Consectetur adipisicing elit. Soluta, impedit saepe.
+                        </p>
+
+                        <div class="mt-auto flex justify-end pt-3">
+                            <button type="button" aria-label="Add Cappuccino to cart"
+                                class="flex h-9 w-9 items-center justify-center rounded-full bg-[#E98C3B] text-white transition duration-200 hover:bg-[#D9792A] active:scale-90 sm:h-10 sm:w-10">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="1.7" class="h-4 w-4 sm:h-5 sm:w-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M6.75 8.25h10.5l.75 11.25H6l.75-11.25Z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M9 8.25V6a3 3 0 0 1 6 0v2.25" />
+                                </svg>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </article>
+
+
+            <!-- CARD 4 -->
+            <article class="group w-full overflow-hidden bg-[#F2EAD3] transition duration-300 hover:-translate-y-1">
+                <div class="flex items-center gap-4 p-3 sm:gap-5 sm:p-4">
+
+                    <div class="h-24 w-24 shrink-0 overflow-hidden sm:h-28 sm:w-28 md:h-32 md:w-32 lg:h-36 lg:w-36">
+                        <img src="./image/item4.webp" alt="Latte"
+                            class="h-full w-full object-cover transition duration-500 group-hover:scale-105" />
+                    </div>
+
+                    <div class="flex min-w-0 flex-1 flex-col self-stretch py-1">
+
+                        <div class="flex items-start justify-between gap-3">
+                            <h2 class="font-serif text-xl leading-tight text-[#10191B] sm:text-2xl lg:text-[27px]">
+                                Croissants
+                            </h2>
+
+                            <span class="shrink-0 pt-1 text-sm font-medium text-[#858585] sm:text-base">
+                                $<span class="ml-0.5 text-[#10191B]">10.99</span>
+                            </span>
+                        </div>
+
+                        <p class="mt-2 line-clamp-2 text-xs leading-5 text-[#777] sm:mt-3 sm:text-sm sm:leading-6">
+                            Consectetur adipisicing elit. Soluta, impedit saepe.
+                        </p>
+
+                        <div class="mt-auto flex justify-end pt-3">
+                            <button type="button" aria-label="Add Classic Latte to cart"
+                                class="flex h-9 w-9 items-center justify-center rounded-full bg-[#E98C3B] text-white transition duration-200 hover:bg-[#D9792A] active:scale-90 sm:h-10 sm:w-10">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="1.7" class="h-4 w-4 sm:h-5 sm:w-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M6.75 8.25h10.5l.75 11.25H6l.75-11.25Z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M9 8.25V6a3 3 0 0 1 6 0v2.25" />
+                                </svg>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </article>
+
+            <!-- CARD 5 -->
+
+            <article class="group w-full overflow-hidden bg-[#F2EAD3] transition duration-300 hover:-translate-y-1">
+                <div class="flex items-center gap-4 p-3 sm:gap-5 sm:p-4">
+
+                    <div class="h-24 w-24 shrink-0 overflow-hidden sm:h-28 sm:w-28 md:h-32 md:w-32 lg:h-36 lg:w-36">
+                        <img src="./image/item6.webp" alt="Latte"
+                            class="h-full w-full object-cover transition duration-500 group-hover:scale-105" />
+                    </div>
+
+                    <div class="flex min-w-0 flex-1 flex-col self-stretch py-1">
+
+                        <div class="flex items-start justify-between gap-3">
+                            <h2 class="font-serif text-xl leading-tight text-[#10191B] sm:text-2xl lg:text-[27px]">
+                                Coffee Beverage
+                            </h2>
+
+                            <span class="shrink-0 pt-1 text-sm font-medium text-[#858585] sm:text-base">
+                                $<span class="ml-0.5 text-[#10191B]">1.99</span>
+                            </span>
+                        </div>
+
+                        <p class="mt-2 line-clamp-2 text-xs leading-5 text-[#777] sm:mt-3 sm:text-sm sm:leading-6">
+                            Consectetur adipisicing elit. Soluta, impedit saepe.
+                        </p>
+
+                        <div class="mt-auto flex justify-end pt-3">
+                            <button type="button" aria-label="Add Classic Latte to cart"
+                                class="flex h-9 w-9 items-center justify-center rounded-full bg-[#E98C3B] text-white transition duration-200 hover:bg-[#D9792A] active:scale-90 sm:h-10 sm:w-10">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="1.7" class="h-4 w-4 sm:h-5 sm:w-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M6.75 8.25h10.5l.75 11.25H6l.75-11.25Z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M9 8.25V6a3 3 0 0 1 6 0v2.25" />
+                                </svg>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </article>
+
+            <!-- CARD 6 -->
+
+            <article class="group w-full overflow-hidden bg-[#F2EAD3] transition duration-300 hover:-translate-y-1">
+                <div class="flex items-center gap-4 p-3 sm:gap-5 sm:p-4">
+
+                    <div class="h-24 w-24 shrink-0 overflow-hidden sm:h-28 sm:w-28 md:h-32 md:w-32 lg:h-36 lg:w-36">
+                        <img src="./image/item7.webp" alt="Latte"
+                            class="h-full w-full object-cover transition duration-500 group-hover:scale-105" />
+                    </div>
+
+                    <div class="flex min-w-0 flex-1 flex-col self-stretch py-1">
+
+                        <div class="flex items-start justify-between gap-3">
+                            <h2 class="font-serif text-xl leading-tight text-[#10191B] sm:text-2xl lg:text-[27px]">
+                                Cold Americano
+                            </h2>
+
+                            <span class="shrink-0 pt-1 text-sm font-medium text-[#858585] sm:text-base">
+                                $<span class="ml-0.5 text-[#10191B]">4.99</span>
+                            </span>
+                        </div>
+
+                        <p class="mt-2 line-clamp-2 text-xs leading-5 text-[#777] sm:mt-3 sm:text-sm sm:leading-6">
+                            Consectetur adipisicing elit. Soluta, impedit saepe.
+                        </p>
+
+                        <div class="mt-auto flex justify-end pt-3">
+                            <button type="button" aria-label="Add Classic Latte to cart"
+                                class="flex h-9 w-9 items-center justify-center rounded-full bg-[#E98C3B] text-white transition duration-200 hover:bg-[#D9792A] active:scale-90 sm:h-10 sm:w-10">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="1.7" class="h-4 w-4 sm:h-5 sm:w-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M6.75 8.25h10.5l.75 11.25H6l.75-11.25Z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M9 8.25V6a3 3 0 0 1 6 0v2.25" />
+                                </svg>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </article>
+
+
+            <!-- CARD 7 -->
+
+            <article class="group w-full overflow-hidden bg-[#F2EAD3] transition duration-300 hover:-translate-y-1">
+                <div class="flex items-center gap-4 p-3 sm:gap-5 sm:p-4">
+
+                    <div class="h-24 w-24 shrink-0 overflow-hidden sm:h-28 sm:w-28 md:h-32 md:w-32 lg:h-36 lg:w-36">
+                        <img src="./image/item8.webp" alt="Latte"
+                            class="h-full w-full object-cover transition duration-500 group-hover:scale-105" />
+                    </div>
+
+                    <div class="flex min-w-0 flex-1 flex-col self-stretch py-1">
+
+                        <div class="flex items-start justify-between gap-3">
+                            <h2 class="font-serif text-xl leading-tight text-[#10191B] sm:text-2xl lg:text-[27px]">
+                                Pancakes
+                            </h2>
+
+                            <span class="shrink-0 pt-1 text-sm font-medium text-[#858585] sm:text-base">
+                                $<span class="ml-0.5 text-[#10191B]">10.99</span>
+                            </span>
+                        </div>
+
+                        <p class="mt-2 line-clamp-2 text-xs leading-5 text-[#777] sm:mt-3 sm:text-sm sm:leading-6">
+                            Consectetur adipisicing elit. Soluta, impedit saepe.
+                        </p>
+
+                        <div class="mt-auto flex justify-end pt-3">
+                            <button type="button" aria-label="Add Classic Latte to cart"
+                                class="flex h-9 w-9 items-center justify-center rounded-full bg-[#E98C3B] text-white transition duration-200 hover:bg-[#D9792A] active:scale-90 sm:h-10 sm:w-10">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="1.7" class="h-4 w-4 sm:h-5 sm:w-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M6.75 8.25h10.5l.75 11.25H6l.75-11.25Z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M9 8.25V6a3 3 0 0 1 6 0v2.25" />
+                                </svg>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </article>
+
+            <!-- CARD 8 -->
+
+            <article class="group w-full overflow-hidden bg-[#F2EAD3] transition duration-300 hover:-translate-y-1">
+                <div class="flex items-center gap-4 p-3 sm:gap-5 sm:p-4">
+
+                    <div class="h-24 w-24 shrink-0 overflow-hidden sm:h-28 sm:w-28 md:h-32 md:w-32 lg:h-36 lg:w-36">
+                        <img src="./image/item9.webp" alt="Latte"
+                            class="h-full w-full object-cover transition duration-500 group-hover:scale-105" />
+                    </div>
+
+                    <div class="flex min-w-0 flex-1 flex-col self-stretch py-1">
+
+                        <div class="flex items-start justify-between gap-3">
+                            <h2 class="font-serif text-xl leading-tight text-[#10191B] sm:text-2xl lg:text-[27px]">
+                                Bacon & Eggs
+                            </h2>
+
+                            <span class="shrink-0 pt-1 text-sm font-medium text-[#858585] sm:text-base">
+                                $<span class="ml-0.5 text-[#10191B]">3.50</span>
+                            </span>
+                        </div>
+
+                        <p class="mt-2 line-clamp-2 text-xs leading-5 text-[#777] sm:mt-3 sm:text-sm sm:leading-6">
+                            Consectetur adipisicing elit. Soluta, impedit saepe.
+                        </p>
+
+                        <div class="mt-auto flex justify-end pt-3">
+                            <button type="button" aria-label="Add Classic Latte to cart"
+                                class="flex h-9 w-9 items-center justify-center rounded-full bg-[#E98C3B] text-white transition duration-200 hover:bg-[#D9792A] active:scale-90 sm:h-10 sm:w-10">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="1.7" class="h-4 w-4 sm:h-5 sm:w-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M6.75 8.25h10.5l.75 11.25H6l.75-11.25Z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M9 8.25V6a3 3 0 0 1 6 0v2.25" />
+                                </svg>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </article>
+
+
+            <!-- CARD 9 -->
+
+            <article class="group w-full overflow-hidden bg-[#F2EAD3] transition duration-300 hover:-translate-y-1">
+                <div class="flex items-center gap-4 p-3 sm:gap-5 sm:p-4">
+
+                    <div class="h-24 w-24 shrink-0 overflow-hidden sm:h-28 sm:w-28 md:h-32 md:w-32 lg:h-36 lg:w-36">
+                        <img src="./image/item10.webp" alt="Latte"
+                            class="h-full w-full object-cover transition duration-500 group-hover:scale-105" />
+                    </div>
+
+                    <div class="flex min-w-0 flex-1 flex-col self-stretch py-1">
+
+                        <div class="flex items-start justify-between gap-3">
+                            <h2 class="font-serif text-xl leading-tight text-[#10191B] sm:text-2xl lg:text-[27px]">
+                                Cupcakes
+                            </h2>
+
+                            <span class="shrink-0 pt-1 text-sm font-medium text-[#858585] sm:text-base">
+                                $<span class="ml-0.5 text-[#10191B]">10.99</span>
+                            </span>
+                        </div>
+
+                        <p class="mt-2 line-clamp-2 text-xs leading-5 text-[#777] sm:mt-3 sm:text-sm sm:leading-6">
+                            Consectetur adipisicing elit. Soluta, impedit saepe.
+                        </p>
+
+                        <div class="mt-auto flex justify-end pt-3">
+                            <button type="button" aria-label="Add Classic Latte to cart"
+                                class="flex h-9 w-9 items-center justify-center rounded-full bg-[#E98C3B] text-white transition duration-200 hover:bg-[#D9792A] active:scale-90 sm:h-10 sm:w-10">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="1.7" class="h-4 w-4 sm:h-5 sm:w-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M6.75 8.25h10.5l.75 11.25H6l.75-11.25Z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M9 8.25V6a3 3 0 0 1 6 0v2.25" />
+                                </svg>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </article>
+
+
+            <!-- CARD 10 -->
+
+
+            <article class="group w-full overflow-hidden bg-[#F2EAD3] transition duration-300 hover:-translate-y-1">
+                <div class="flex items-center gap-4 p-3 sm:gap-5 sm:p-4">
+
+                    <div class="h-24 w-24 shrink-0 overflow-hidden sm:h-28 sm:w-28 md:h-32 md:w-32 lg:h-36 lg:w-36">
+                        <img src="./image/item5.webp" alt="Latte"
+                            class="h-full w-full object-cover transition duration-500 group-hover:scale-105" />
+                    </div>
+
+                    <div class="flex min-w-0 flex-1 flex-col self-stretch py-1">
+
+                        <div class="flex items-start justify-between gap-3">
+                            <h2 class="font-serif text-xl leading-tight text-[#10191B] sm:text-2xl lg:text-[27px]">
+                                Fruit salad
+                            </h2>
+
+                            <span class="shrink-0 pt-1 text-sm font-medium text-[#858585] sm:text-base">
+                                $<span class="ml-0.5 text-[#10191B]">5.50</span>
+                            </span>
+                        </div>
+
+                        <p class="mt-2 line-clamp-2 text-xs leading-5 text-[#777] sm:mt-3 sm:text-sm sm:leading-6">
+                            Consectetur adipisicing elit. Soluta, impedit saepe.
+                        </p>
+
+                        <div class="mt-auto flex justify-end pt-3">
+                            <button type="button" aria-label="Add Classic Latte to cart"
+                                class="flex h-9 w-9 items-center justify-center rounded-full bg-[#E98C3B] text-white transition duration-200 hover:bg-[#D9792A] active:scale-90 sm:h-10 sm:w-10">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="1.7" class="h-4 w-4 sm:h-5 sm:w-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M6.75 8.25h10.5l.75 11.25H6l.75-11.25Z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M9 8.25V6a3 3 0 0 1 6 0v2.25" />
+                                </svg>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="bg-[#3F2305] text-[#F2EAD3]">
+        <div class="mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">
+
+            <!-- ================= TOP SECTION ================= -->
+            <div class="border-b border-dotted border-[#F2EAD3]/20 py-12 sm:py-16 lg:py-20">
+
+                <!-- Header -->
+                <div class="mb-12 flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between lg:mb-16">
+
+                    <!-- Logo -->
+
+                    <a href="index.html" class="shrink-0 transition-opacity duration-300 hover:opacity-90"
+                        aria-label="CoffeeKing Home">
+                        <img src="./image/mylogo.png" alt="CoffeeKing" class="h-auto w-20 sm:w-24 md:w-28 lg:w-32">
+                    </a>
+
+
+                    <!-- Social Icons -->
+                    <div class="flex items-center gap-5">
+
+                        <!-- Facebook -->
+                        <a href="#" aria-label="Facebook"
+                            class="text-[#F2EAD3]/70 transition-colors duration-300 hover:text-[#D4A373]">
+                            <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M14 8h3V4h-3c-3.3 0-5 1.9-5 5v3H6v4h3v8h4v-8h3.5l.5-4H13V9c0-.7.3-1 1-1Z" />
+                            </svg>
+                        </a>
+
+                        <!-- Instagram -->
+                        <a href="#" aria-label="Instagram"
+                            class="text-[#F2EAD3]/70 transition-colors duration-300 hover:text-[#D4A373]">
+                            <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.8">
+                                <rect x="3" y="3" width="18" height="18" rx="5" />
+                                <circle cx="12" cy="12" r="4" />
+                                <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+                            </svg>
+                        </a>
+
+                        <!-- X -->
+                        <a href="#" aria-label="X"
+                            class="text-[#F2EAD3]/70 transition-colors duration-300 hover:text-[#D4A373]">
+                            <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M18.9 2H22l-6.8 7.8L23.2 22h-6.3l-4.9-6.4L6.4 22H3.3l7.2-8.2L2.8 2h6.4l4.4 5.8L18.9 2Zm-1.1 17.7h1.7L8.3 4.2H6.5L17.8 19.7Z" />
+                            </svg>
+                        </a>
+
+                        <!-- YouTube -->
+                        <a href="#" aria-label="YouTube"
+                            class="text-[#F2EAD3]/70 transition-colors duration-300 hover:text-[#D4A373]">
+                            <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8ZM9.6 15.9V8.1l6.5 3.9-6.5 3.9Z" />
+                            </svg>
+                        </a>
+
+                    </div>
+                </div>
+
+
+                <!-- ================= FOOTER CONTENT ================= -->
+                <div class="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-12 lg:gap-10">
+
+                    <!-- About -->
+                    <div class="lg:col-span-4">
+
+                        <h3 class="mb-6 font-serif text-2xl font-normal sm:text-3xl">
+                            About us
+                        </h3>
+
+                        <p class="max-w-md text-sm leading-7 text-[#F2EAD3]/65 sm:text-[15px]">
+                            Discover the perfect blend of rich aromas, handcrafted coffee, and a warm atmosphere. Come
+                            visit us and experience the Dolce Gusto difference.
+                        </p>
+
+                        <a href="#"
+                            class="mt-7 inline-block font-serif text-sm uppercase tracking-wide text-[#D4A373] transition-colors duration-300 hover:text-[#F2EAD3]">
+                            Read More
+                        </a>
+
+                    </div>
+
+
+                    <!-- Contact -->
+                    <div class="lg:col-span-4">
+
+                        <h3 class="mb-6 font-serif text-2xl font-normal sm:text-3xl">
+                            Contact info
+                        </h3>
+
+                        <div class="space-y-5 text-sm">
+
+                            <!-- Call -->
+                            <div class="flex flex-col gap-1 sm:flex-row sm:items-start">
+
+                                <span
+                                    class="w-28 shrink-0 text-[11px] font-bold uppercase tracking-[0.18em] text-[#F2EAD3]">
+                                    Call :
+                                </span>
+
+                                <a href="tel:+760947544371"
+                                    class="text-[#F2EAD3]/65 transition-colors duration-300 hover:text-[#D4A373]">
+                                    +76 (094) 754 43 71
+                                </a>
+
+                            </div>
+
+                            <!-- Email -->
+                            <div class="flex flex-col gap-1 sm:flex-row sm:items-start">
+
+                                <span
+                                    class="w-28 shrink-0 text-[11px] font-bold uppercase tracking-[0.18em] text-[#F2EAD3]">
+                                    Write :
+                                </span>
+
+                                <a href="mailto:your.email.inbox@here.com"
+                                    class="break-all text-[#F2EAD3]/65 transition-colors duration-300 hover:text-[#D4A373]">
+                                    your.email.inbox@here.com
+                                </a>
+
+                            </div>
+
+                            <!-- Address -->
+                            <div class="flex flex-col gap-1 sm:flex-row sm:items-start">
+
+                                <span
+                                    class="w-28 shrink-0 text-[11px] font-bold uppercase tracking-[0.18em] text-[#F2EAD3]">
+                                    Find us :
+                                </span>
+
+                                <a href="#"
+                                    class="text-[#F2EAD3]/65 transition-colors duration-300 hover:text-[#D4A373]">
+                                    Canada, Toronto, Avenue 31B,
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                        <a href="#"
+                            class="mt-7 inline-block font-serif text-sm uppercase tracking-wide text-[#D4A373] transition-colors duration-300 hover:text-[#F2EAD3]">
+                            Read More
+                        </a>
+
+                    </div>
+
+
+                    <!-- Gallery -->
+                    <div class="lg:col-span-4">
+
+                        <h3 class="mb-6 font-serif text-2xl font-normal sm:text-3xl">
+                            Gallery
+                        </h3>
+
+                        <!-- Gallery Images -->
+                        <div class="grid grid-cols-2 gap-3 sm:grid-cols-4 lg:grid-cols-4">
+
+                            <a href="#" class="group relative aspect-square overflow-hidden rounded-md">
+                                <img src="./image/item1.webp" alt="Food"
+                                    class="h-full w-full object-cover transition duration-500 group-hover:scale-110" />
+
+                                <div
+                                    class="absolute inset-0 bg-[#3F2305]/0 transition duration-300 group-hover:bg-[#3F2305]/30">
+                                </div>
+                            </a>
+
+                            <a href="#" class="group relative aspect-square overflow-hidden rounded-md">
+                                <img src="./image/item2.webp" alt="Burger"
+                                    class="h-full w-full object-cover transition duration-500 group-hover:scale-110" />
+
+                                <div
+                                    class="absolute inset-0 bg-[#3F2305]/0 transition duration-300 group-hover:bg-[#3F2305]/30">
+                                </div>
+                            </a>
+
+                            <a href="#" class="group relative aspect-square overflow-hidden rounded-md">
+                                <img src="./image/item3.webp" alt="Dish"
+                                    class="h-full w-full object-cover transition duration-500 group-hover:scale-110" />
+
+                                <div
+                                    class="absolute inset-0 bg-[#3F2305]/0 transition duration-300 group-hover:bg-[#3F2305]/30">
+                                </div>
+                            </a>
+
+                            <a href="#" class="group relative aspect-square overflow-hidden rounded-md">
+                                <img src="./image/item4.webp" alt="Burger"
+                                    class="h-full w-full object-cover transition duration-500 group-hover:scale-110" />
+
+                                <div
+                                    class="absolute inset-0 bg-[#3F2305]/0 transition duration-300 group-hover:bg-[#3F2305]/30">
+                                </div>
+                            </a>
+
+                        </div>
+
+
+                        <!-- Gallery Bottom -->
+                        <div class="mt-7 flex items-center justify-between">
+
+                            <a href="./gallery.html"
+                                class="font-serif text-sm uppercase tracking-wide text-[#D4A373] transition-colors duration-300 hover:text-[#F2EAD3]">
+                                See More
+                            </a>
+
+                            <div class="flex items-center gap-6">
+
+                                <!-- Previous -->
+                                <a href="#" aria-label="Previous gallery"
+                                    class="text-[#F2EAD3] transition-colors duration-300 hover:text-[#D4A373]">
+                                    <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="1.5">
+                                        <path d="M19 12H5" />
+                                        <path d="M11 18l-6-6 6-6" />
+                                    </svg>
+                                </a>
+
+                                <!-- Next -->
+                                <a href="#" aria-label="Next gallery"
+                                    class="text-[#F2EAD3] transition-colors duration-300 hover:text-[#D4A373]">
+                                    <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="1.5">
+                                        <path d="M5 12h14" />
+                                        <path d="M13 6l6 6-6 6" />
+                                    </svg>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- ================= BOTTOM ================= -->
+            <div class="flex flex-col gap-5 py-8 text-sm sm:flex-row sm:items-center sm:justify-between">
+
+                <p class="text-[#F2EAD3]/60">
+                    © Coffeeking 2022 . All rights reserved.
+                </p>
+
+                <a href="#"
+                    class="font-serif uppercase tracking-wide text-[#D4A373] transition-colors duration-300 hover:text-[#F2EAD3]">
+                    Back to Top
+                </a>
+
+            </div>
+
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
